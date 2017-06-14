@@ -2,9 +2,9 @@
 
 a mac app to converts videos to [azimuthal](https://en.wikipedia.org/wiki/Azimuthal_equidistant_projection) videos (also known as Tiny Planet or Rabbit hole) which can be displayed without distortion on a spheric screen 
 
-<img alt="Screenshot with a normal video" src="Screenshots/normal.png" width = "400">
-<img alt="Screenshot where the world looks like a tiny planet" src="Screenshots/tinyplanet.png" width = "400">
-<img alt="Screenshot where the worls seems to have a big blue hole" src="Screenshots/rabbithole.png" width = "400">
+![Screenshot with a normal video](Screenshots/normal.png)
+![Screenshot where the world looks like a tiny planet](Screenshots/tinyplanet.png)
+![Screenshot where the worls seems to have a big blue hole](Screenshots/rabbithole.png)
 
 # Usage 
 
