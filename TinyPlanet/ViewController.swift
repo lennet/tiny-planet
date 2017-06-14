@@ -116,7 +116,7 @@ class ViewController: NSViewController {
             filter?.render(to: url, progess: { (progess) in
                 self.progressbar.doubleValue = Double(progess)
             }, completion: { success in
-                saveButton.isEnabled = true
+                self.saveButton.isEnabled = true
                 self.progressbar.doubleValue = 0
                 NSWorkspace.shared().open(url)
             })
