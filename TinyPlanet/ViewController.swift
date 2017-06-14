@@ -126,7 +126,7 @@ class ViewController: NSViewController {
     func showWrongImageRatioAlert() {
         let alert = NSAlert()
         alert.alertStyle = .warning
-        alert.messageText = "The current version only the transformation of videos with an ratio of 2:1. Cut the video in another application to get better results"
+        alert.messageText = "The current version only the transformation of videos with an ratio of 2:1. Crop the video in another application to get better results"
         alert.runModal()
     }
     
