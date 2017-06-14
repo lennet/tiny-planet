@@ -112,9 +112,11 @@ class ViewController: NSViewController {
             progressbar.isHidden = false
             progressbar.doubleValue = 0
             progressbar.maxValue = 1
+            saveButton.isEnabled = false
             filter?.render(to: url, progess: { (progess) in
                 self.progressbar.doubleValue = Double(progess)
             }, completion: { success in
+                saveButton.isEnabled = true
                 self.progressbar.doubleValue = 0
                 NSWorkspace.shared().open(url)
             })
