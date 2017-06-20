@@ -684,11 +684,11 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="TinyPlanet" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="547" height="929"/>
+                        <rect key="frame" x="0.0" y="0.0" width="547" height="450"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <segmentedControl verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="oob-o7-bnu">
-                                <rect key="frame" x="154" y="896" width="240" height="24"/>
+                                <rect key="frame" x="154" y="417" width="240" height="24"/>
                                 <segmentedCell key="cell" borderStyle="border" alignment="left" style="rounded" trackingMode="selectOne" id="ucO-JD-B2x">
                                     <font key="font" metaFont="system"/>
                                     <segments>
@@ -727,14 +727,6 @@
                                     <action selector="loadButtonClicked:" target="XfG-lQ-9wD" id="J7B-fG-q3t"/>
                                 </connections>
                             </button>
-                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-Sw-2AY">
-                                <rect key="frame" x="10" y="88" width="527" height="800"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" relation="lessThanOrEqual" constant="800" id="Msh-iQ-hTQ"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="200" id="rws-mi-fS7"/>
-                                </constraints>
-                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="G06-7X-ISs"/>
-                            </imageView>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" allowsCharacterPickerTouchBarItem="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fPe-zI-YOZ">
                                 <rect key="frame" x="255" y="61" width="37" height="17"/>
                                 <constraints>
@@ -756,20 +748,21 @@
                                     <action selector="chagePreviewMode:" target="XfG-lQ-9wD" id="ZeG-sm-F7Q"/>
                                 </connections>
                             </button>
+                            <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iiS-Sw-2AY">
+                                <rect key="frame" x="123" y="123" width="300" height="250"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" id="G06-7X-ISs"/>
+                            </imageView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="iiS-Sw-2AY" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="10" id="7Lp-dn-dIC"/>
                             <constraint firstItem="oob-o7-bnu" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="98Z-V6-u58"/>
-                            <constraint firstAttribute="trailing" secondItem="iiS-Sw-2AY" secondAttribute="trailing" constant="10" id="AS4-47-hvL"/>
                             <constraint firstItem="Dkv-Z4-KxA" firstAttribute="leading" secondItem="Wgo-Nh-Ng9" secondAttribute="leading" id="AsD-j8-mEI"/>
-                            <constraint firstItem="fPe-zI-YOZ" firstAttribute="top" secondItem="iiS-Sw-2AY" secondAttribute="bottom" constant="10" id="Gmg-mL-yLA"/>
                             <constraint firstItem="Wgo-Nh-Ng9" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="2:3" id="NIU-MA-ScK"/>
                             <constraint firstItem="oob-o7-bnu" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="O8f-es-Bpw"/>
                             <constraint firstItem="zaf-xC-u0k" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="UM8-RS-YPc"/>
                             <constraint firstAttribute="bottom" secondItem="zaf-xC-u0k" secondAttribute="bottom" constant="10" id="Xv4-1l-VV0"/>
                             <constraint firstItem="Wgo-Nh-Ng9" firstAttribute="top" secondItem="fPe-zI-YOZ" secondAttribute="bottom" constant="10" id="Ydb-jN-3cZ"/>
                             <constraint firstItem="Dkv-Z4-KxA" firstAttribute="top" secondItem="Wgo-Nh-Ng9" secondAttribute="bottom" constant="10" id="dCB-tt-KS6"/>
-                            <constraint firstItem="iiS-Sw-2AY" firstAttribute="top" secondItem="oob-o7-bnu" secondAttribute="bottom" constant="10" id="dgZ-cO-NSG"/>
                             <constraint firstItem="Wgo-Nh-Ng9" firstAttribute="centerX" secondItem="m2S-Jp-Qdl" secondAttribute="centerX" id="gts-9n-QEo"/>
                             <constraint firstAttribute="bottom" secondItem="Dkv-Z4-KxA" secondAttribute="bottom" constant="10" id="nOc-Cg-Nsu"/>
                             <constraint firstAttribute="bottom" secondItem="xuz-Be-7Xq" secondAttribute="bottom" constant="10" id="nQr-zO-xxY"/>
